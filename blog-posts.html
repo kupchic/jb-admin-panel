@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Admin panel | Jewish Brides</title>
+	<script src="https://use.typekit.net/duu4dza.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		try {
+			Typekit.load();
+		} catch (e) {}
+	</script>
+	<link href="./img/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+		integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="sidebar-sticky">
+	<nav class="sidebar">
+		<img class="sidebar__logo sidebar__logo--text" src="./img/logo-text.svg" alt="Jewish Brides" />
+		<img class="sidebar__logo--min" src="./img/JB.svg" alt="Jewish Brides" />
+		<img class="sidebar__logo" src="./img/logo.svg" alt="" />
+
+		<ul class="sidebar__list">
+			<li>
+				<a href="#" class="sidebar__link">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M9 1L1 7.85714V15.8571C1 16.4883 1.51167 17 2.14286 17H6.71429V13.5714C6.71429 12.3091 7.73764 11.2857 9 11.2857C10.2624 11.2857 11.2857 12.3091 11.2857 13.5714V17H15.8571C16.4883 17 17 16.4883 17 15.8571V7.85714L9 1Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Homee</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 1V17M1 9H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Submissions</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="weddings.html">Weddings</a>
+					<a class="sidebar__submenu--link" href="vendors-submission.html">Vendors</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown sidebar__dropdown--open">
+					<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.28571 3.28571H2.14286C1.51167 3.28571 1 3.79739 1 4.42857V15.8571C1 16.4883 1.51167 17 2.14286 17H11.2857C11.9169 17 12.4286 16.4883 12.4286 15.8571V14.7143M13.5714 14.7143H4.42857C3.79739 14.7143 3.28571 14.2026 3.28571 13.5714V2.14286C3.28571 1.51167 3.79739 1 4.42857 1H11.2857L14.7143 3.28571V13.5714C14.7143 14.2026 14.2026 14.7143 13.5714 14.7143Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Pages</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="/">Homepage</a>
+					<a class="sidebar__submenu--link" href="about-us.html">About Us</a>
+					<a class="sidebar__submenu--link" href="contact.html">Contact</a>
+					<a class="sidebar__submenu--link" href="wedding-submission.html">Wedding Submission</a>
+					<a class="sidebar__submenu--link" href="how-it-works.html">How It Works</a>
+					<a class="sidebar__submenu--link" href="work-with-us.html">Work With Us</a>
+					<a class="sidebar__submenu--link" href="vendors.html">Vendors</a>
+					<a class="sidebar__submenu--link" href="#">Vendor Profile</a>
+					<a class="sidebar__submenu--link" href="terms-of-use.html">Terms of use</a>
+					<a class="sidebar__submenu--link" href="privacy.html">Privacy</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.1429 17H17V15.2857C17 13.7078 15.7208 12.4286 14.1429 12.4286M10.1429 4.42634C10.1429 6.31882 8.608 7.85267 6.71429 7.85267C4.82057 7.85267 3.28571 6.31882 3.28571 4.42634C3.28571 2.53386 4.82057 1 6.71429 1C8.608 1 10.1429 2.53386 10.1429 4.42634ZM12.4286 16.9896H1C1 16.1781 1 15.4061 1 14.707C1 12.8135 2.53502 11.279 4.42857 11.279H9C10.8935 11.279 12.4286 12.8135 12.4286 14.707C12.4286 15.4061 12.4286 16.1781 12.4286 16.9896ZM13.5714 10.1429C12.3091 10.1429 11.2857 9.11951 11.2857 7.85714C11.2857 6.59478 12.3091 5.57143 13.5714 5.57143C14.8338 5.57143 15.8571 6.59478 15.8571 7.85714C15.8571 9.11951 14.8338 10.1429 13.5714 10.1429Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="vendors-page.html" class="sidebar__link">
+					<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M7.71429 3.85714V3.28571C7.71429 2.02335 8.73764 1 10 1C11.2624 1 12.2857 2.02335 12.2857 3.28571V3.85714M2 7.85714C6.23517 12.6973 13.7648 12.6973 18 7.85714M3.14286 4.42857H16.8571C17.4883 4.42857 18 4.94025 18 5.57143V15.8571C18 16.4883 17.4883 17 16.8571 17H3.14286C2.51168 17 2 16.4883 2 15.8571V5.57143C2 4.94025 2.51167 4.42857 3.14286 4.42857Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Vendors
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="weddings-page.html" class="sidebar__link">
+					<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 17L1 6.71429M9 17L17 6.71429M9 17L6 6.71429M9 17L12 6.71429M1 6.71429L4.42857 1H13.5714L17 6.71429M1 6.71429H6M17 6.71429H12M6 6.71429H9H12"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Weddings
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="blog-posts.html" class="sidebar__link">
+					<svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M4.25 8.24477H3.5V9.74477H4.25V8.24477ZM10.75 9.74477H11.5V8.24477H10.75V9.74477ZM4.25086 11.6711L3.50086 11.6702L3.49914 13.1702L4.24914 13.1711L4.25086 11.6711ZM10.7491 13.1786L11.4991 13.1794L11.5009 11.6794L10.7509 11.6786L10.7491 13.1786ZM4.25052 4.81843L3.50052 4.81791L3.49948 6.31791L4.24948 6.31843L4.25052 4.81843ZM8.58281 6.32143L9.33281 6.32195L9.33385 4.82195L8.58385 4.82143L8.58281 6.32143ZM10.75 1L11.2943 0.484034L11.0725 0.25H10.75V1ZM14 4.42857H14.75V4.12959L14.5443 3.91261L14 4.42857ZM4.25 9.74477H10.75V8.24477H4.25V9.74477ZM4.24914 13.1711L10.7491 13.1786L10.7509 11.6786L4.25086 11.6711L4.24914 13.1711ZM4.24948 6.31843L8.58281 6.32143L8.58385 4.82143L4.25052 4.81843L4.24948 6.31843ZM12.9167 16.25H2.08333V17.75H12.9167V16.25ZM1.75 15.8571V2.14286H0.25V15.8571H1.75ZM2.08333 1.75H10.75V0.25H2.08333V1.75ZM13.25 4.42857V15.8571H14.75V4.42857H13.25ZM10.2057 1.51597L13.4557 4.94454L14.5443 3.91261L11.2943 0.484034L10.2057 1.51597ZM2.08333 16.25C1.93653 16.25 1.75 16.1124 1.75 15.8571H0.25C0.25 16.8642 1.03352 17.75 2.08333 17.75V16.25ZM12.9167 17.75C13.9665 17.75 14.75 16.8642 14.75 15.8571H13.25C13.25 16.1124 13.0635 16.25 12.9167 16.25V17.75ZM1.75 2.14286C1.75 1.88758 1.93653 1.75 2.08333 1.75V0.25C1.03352 0.25 0.25 1.13577 0.25 2.14286H1.75Z"
+							fill="currentColor" />
+					</svg>
+					<span>
+						Blog posts
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown sidebar__dropdown--open">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M7.22171 1L7.12343 1.49942L6.74744 3.32685C6.14629 3.55656 5.60114 3.8823 5.10857 4.26859L3.27086 3.65372L2.77715 3.50058L2.52115 3.94171L1.256 6.05825L1 6.49946L1.37486 6.82745L2.79658 8.0377C2.74515 8.35428 2.67887 8.66739 2.67887 8.99996C2.67887 9.33254 2.74515 9.64572 2.79658 9.96229L1.37486 11.1726L1 11.5005L1.256 11.9417L2.52115 14.0583L2.77715 14.5005L3.27086 14.3463L5.10857 13.7314C5.60114 14.1177 6.14629 14.4434 6.74744 14.6731L7.12343 16.5005L7.22171 17H10.7772L10.8766 16.5005L11.2514 14.6731C11.8526 14.4434 12.3977 14.1177 12.8903 13.7314L14.728 14.3463L15.2217 14.5005L15.4789 14.0583L16.7429 11.9417L17 11.5005L16.624 11.1726L15.2023 9.96229C15.2549 9.64572 15.32 9.33254 15.32 8.99996C15.32 8.66739 15.2549 8.35428 15.2023 8.0377L16.624 6.82745L17 6.49946L16.7429 6.05825L15.4789 3.94171L15.2217 3.50058L14.728 3.65372L12.8903 4.26859C12.3977 3.8823 11.8526 3.55656 11.2514 3.32685L10.8766 1.49942L10.7772 1H7.22171Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M11.2853 8.99996C11.2853 10.2617 10.2613 11.2857 8.99958 11.2857C7.73787 11.2857 6.71387 10.2617 6.71387 8.99996C6.71387 7.73825 7.73787 6.7143 8.99958 6.7143C10.2613 6.7143 11.2853 7.73825 11.2853 8.99996Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Settings
+					</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="color-settings.html">Colors</a>
+					<a class="sidebar__submenu--link" href="tag-settings.html">Blog tag</a>
+					<a class="sidebar__submenu--link" href="location.html">Locations</a>
+					<a class="sidebar__submenu--link" href="highlights.html">Highlights</a>
+					<a class="sidebar__submenu--link" href="vendor-types.html">Vendor types</a>
+					<a class="sidebar__submenu--link" href="menu-settings.html">Menu</a>
+					<a class="sidebar__submenu--link" href="security.html">Security</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link logout">
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.33456 9H17.0012M17.0012 9L15.0012 7M17.0012 9L15.0012 11" stroke="currentColor"
+							stroke-width="1.5" stroke-linecap="square" />
+						<path d="M11.6667 4.55556V1H1V17H11.6667V13.4444" stroke="currentColor" stroke-width="1.5"
+							stroke-linecap="square" />
+					</svg>
+					<span>
+						Logout
+					</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+		<div class="inner">
+			<div class="container">
+				<div class="header">
+					<a href="#" class="header__link">go to live website</a>
+					<p class="header__current">admin panel</p>
+				</div>
+				<section class="section wedding-submission">
+					<div class="wedding-submission__title">
+						<h2 class="wedding-submission__italic-title italic-title">Blog posts</h2>
+						<div class="blog-posts__buttons">
+							<a href="calendar.html" class="blog-posts__date">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 5V1V5ZM14 5V1V5ZM5 9H15H5ZM3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+							<button class="wedding-submission__add">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="9" width="2" height="20" fill="white" />
+									<rect x="20" y="9" width="2" height="20" transform="rotate(90 20 9)" fill="white" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="input">
+						<input type="text" class="input__field input__field--search" placeholder="Search" />
+					</div>
+					<div class="blog-posts__category">
+						<div class="category category--blog">
+							<label class="category__btn">
+								<input type="radio" checked name="category-post" />
+								<span>ALL</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>Lifestyle</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>TRAVEL AND HONEYMOON</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>EXPERT ADVICE</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>BEAUTY AND JEWELRY</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>celebrity style</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>celebrity style</span>
+							</label>
+							<label class="category__btn">
+								<input type="radio" name="category-post" />
+								<span>celebrity style</span>
+							</label>
+						</div>
+					</div>
+					<div class="blog-posts-table">
+						<div class="blog-posts-table__row">
+							<label class="table__label checkbox checkbox-all">
+								<input class="checkbox__input" type="checkbox" id="all" />
+								<span></span>
+							</label>
+							<div class="blog-posts-table__cell">Photo</div>
+							<div class="blog-posts-table__cell">Heading</div>
+							<div class="blog-posts-table__cell">Tags</div>
+							<div class="blog-posts-table__cell">Date</div>
+							<div class="blog-posts-table__cell">
+								<div class="checkbox-switcher">
+									<div class="checkbox-switcher__switcher">
+										<label>
+											<small class="checkbox-switcher__label checkbox-switcher__label--blog-posts">Show only editor
+												picks</small>
+											<input type="checkbox" value="" />
+											<span>
+												<small></small>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blog-posts-table__row">
+							<label class="table__label checkbox">
+								<input class="checkbox__input" type="checkbox" name="group" />
+								<span></span>
+							</label>
+							<div class="blog-posts-table__cell"><img src="./img/weddings-table-photo.png" alt="" /></div>
+							<p class="blog-posts-table__cell blog-posts-table__heading">
+								<span class="blog-posts-table__subtitle">Editor’s picks</span>
+								Expert
+								Tips + Trends for Bridal Fashion &
+								Wedding Décor
+							</p>
+							<div class="blog-posts-table__cell">Videographers, Rentals, Design, Travel and honeymoon</div>
+							<div class="blog-posts-table__cell">20 Feb 2019</div>
+							<div class="blog-posts-table__cell blog-posts-table__cell--buttons">
+								<button class="table__check">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.8418 1.07031L6.05469 11.8574L2.11719 7.87891C1.91211 7.71484 1.58398 7.71484 1.41992 7.87891L0.230469 9.06836C0.0664062 9.23242 0.0664062 9.56055 0.230469 9.76562L5.72656 15.2207C5.93164 15.4258 6.21875 15.4258 6.42383 15.2207L18.7285 2.91602C18.8926 2.75195 18.8926 2.42383 18.7285 2.21875L17.5391 1.07031C17.375 0.865234 17.0469 0.865234 16.8418 1.07031Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="table__visible">
+									<svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1 7.5L0.297436 7.2375C0.234188 7.40679 0.234188 7.59321 0.297436 7.76249L1 7.5ZM18 7.5L18.7026 7.7625C18.7658 7.59321 18.7658 7.40679 18.7026 7.2375L18 7.5ZM9.49998 13.25C6.76379 13.25 4.83019 11.7934 3.5473 10.2674C2.90682 9.50551 2.44184 8.74032 2.1372 8.16477C1.98533 7.87783 1.87451 7.64032 1.80261 7.47705C1.76669 7.39547 1.74057 7.33261 1.72397 7.2916C1.71567 7.27111 1.70976 7.25608 1.7062 7.24693C1.70442 7.24236 1.70323 7.23925 1.70263 7.23766C1.70233 7.23687 1.70217 7.23645 1.70216 7.23643C1.70215 7.23641 1.70219 7.23649 1.70225 7.23667C1.70229 7.23676 1.70236 7.23697 1.70238 7.23702C1.70247 7.23725 1.70256 7.2375 1 7.5C0.297436 7.76249 0.29755 7.7628 0.297674 7.76313C0.297728 7.76328 0.297862 7.76363 0.297969 7.76392C0.298185 7.76449 0.298439 7.76517 0.298731 7.76594C0.299314 7.76749 0.300049 7.76943 0.300937 7.77176C0.302713 7.77642 0.305099 7.78264 0.308101 7.79036C0.314105 7.8058 0.322573 7.82728 0.333545 7.85439C0.355485 7.9086 0.387468 7.98539 0.429811 8.08155C0.51444 8.27374 0.640786 8.54404 0.811456 8.86648C1.1519 9.50968 1.67352 10.3695 2.39911 11.2326C3.84836 12.9566 6.16474 14.75 9.49998 14.75V13.25ZM1 7.5C1.70256 7.76249 1.70247 7.76275 1.70238 7.76298C1.70236 7.76303 1.70229 7.76324 1.70225 7.76333C1.70219 7.76351 1.70215 7.76359 1.70216 7.76357C1.70217 7.76355 1.70233 7.76313 1.70263 7.76234C1.70323 7.76075 1.70442 7.75764 1.7062 7.75307C1.70976 7.74391 1.71567 7.72889 1.72397 7.70839C1.74057 7.66738 1.76669 7.60453 1.80261 7.52295C1.87451 7.35968 1.98533 7.12216 2.1372 6.83523C2.44184 6.25968 2.90682 5.49449 3.5473 4.73261C4.83019 3.20656 6.76379 1.75 9.49998 1.75V0.25C6.16474 0.25 3.84836 2.04344 2.39911 3.76738C1.67352 4.63051 1.1519 5.49032 0.811456 6.13352C0.640786 6.45596 0.51444 6.72626 0.429811 6.91845C0.387468 7.01461 0.355485 7.0914 0.333545 7.14561C0.322573 7.17272 0.314105 7.1942 0.308101 7.20964C0.305099 7.21736 0.302713 7.22358 0.300937 7.22824C0.300049 7.23057 0.299314 7.23251 0.298731 7.23406C0.298439 7.23483 0.298185 7.23551 0.297969 7.23608C0.297862 7.23637 0.297728 7.23672 0.297674 7.23687C0.29755 7.2372 0.297436 7.2375 1 7.5ZM9.49998 1.75C12.2362 1.75 14.1698 3.20656 15.4527 4.73262C16.0932 5.49449 16.5582 6.25968 16.8628 6.83524C17.0147 7.12217 17.1255 7.35968 17.1974 7.52296C17.2333 7.60453 17.2594 7.66739 17.276 7.7084C17.2843 7.7289 17.2902 7.74392 17.2938 7.75307C17.2956 7.75765 17.2968 7.76075 17.2974 7.76234C17.2977 7.76313 17.2978 7.76355 17.2978 7.76358C17.2978 7.76359 17.2978 7.76351 17.2977 7.76333C17.2977 7.76324 17.2976 7.76303 17.2976 7.76299C17.2975 7.76275 17.2974 7.7625 18 7.5C18.7026 7.2375 18.7024 7.2372 18.7023 7.23686C18.7023 7.23672 18.7021 7.23636 18.702 7.23608C18.7018 7.2355 18.7016 7.23483 18.7013 7.23405C18.7007 7.23251 18.6999 7.23057 18.6991 7.22824C18.6973 7.22358 18.6949 7.21736 18.6919 7.20964C18.6859 7.19419 18.6774 7.17271 18.6665 7.14561C18.6445 7.0914 18.6125 7.01461 18.5702 6.91845C18.4856 6.72626 18.3592 6.45596 18.1885 6.13351C17.8481 5.49032 17.3265 4.63051 16.6009 3.76738C15.1516 2.04344 12.8352 0.25 9.49998 0.25V1.75ZM18 7.5C17.2974 7.2375 17.2975 7.23725 17.2976 7.23701C17.2976 7.23697 17.2977 7.23676 17.2977 7.23667C17.2978 7.23649 17.2978 7.23641 17.2978 7.23642C17.2978 7.23645 17.2977 7.23687 17.2974 7.23766C17.2968 7.23925 17.2956 7.24235 17.2938 7.24693C17.2902 7.25608 17.2843 7.2711 17.276 7.2916C17.2594 7.33261 17.2333 7.39547 17.1974 7.47704C17.1255 7.64032 17.0147 7.87783 16.8628 8.16476C16.5582 8.74032 16.0932 9.50551 15.4527 10.2674C14.1698 11.7934 12.2362 13.25 9.49998 13.25V14.75C12.8352 14.75 15.1516 12.9566 16.6009 11.2326C17.3265 10.3695 17.8481 9.50968 18.1885 8.86649C18.3592 8.54404 18.4856 8.27374 18.5702 8.08155C18.6125 7.98539 18.6445 7.9086 18.6665 7.85439C18.6774 7.82729 18.6859 7.80581 18.6919 7.79036C18.6949 7.78264 18.6973 7.77642 18.6991 7.77176C18.6999 7.76943 18.7007 7.76749 18.7013 7.76594C18.7016 7.76517 18.7018 7.7645 18.702 7.76392C18.7021 7.76364 18.7023 7.76328 18.7023 7.76314C18.7024 7.7628 18.7026 7.7625 18 7.5ZM9.5 9.35C8.62031 9.35 7.82143 8.57073 7.82143 7.5H6.32143C6.32143 9.30115 7.69716 10.85 9.5 10.85V9.35ZM11.1786 7.5C11.1786 8.57073 10.3797 9.35 9.5 9.35V10.85C11.3028 10.85 12.6786 9.30115 12.6786 7.5H11.1786ZM9.5 5.65C10.3797 5.65 11.1786 6.42927 11.1786 7.5H12.6786C12.6786 5.69885 11.3028 4.15 9.5 4.15V5.65ZM9.5 4.15C7.69716 4.15 6.32143 5.69885 6.32143 7.5H7.82143C7.82143 6.42927 8.62031 5.65 9.5 5.65V4.15Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="table__favorite">
+									<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9 13.4375L4.05548 16L5 10.5725L1 6.72914L6.52774 5.93788L9 1L11.4723 5.93788L17 6.72914L13 10.5725L13.9445 16L9 13.4375Z"
+											stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<a href="blog-post-edit.html" class="table__edit">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.5 11.2857L0.960449 10.7648L0.75 10.9827V11.2857H1.5ZM11.431 1L11.9706 0.479054C11.8293 0.332674 11.6345 0.25 11.431 0.25C11.2276 0.25 11.0328 0.332674 10.8915 0.479054L11.431 1ZM16.9483 6.71429L17.4878 7.23523C17.7684 6.94461 17.7684 6.48396 17.4878 6.19334L16.9483 6.71429ZM7.01724 17V17.75H7.33564L7.55679 17.5209L7.01724 17ZM1.5 17H0.75C0.75 17.4142 1.08579 17.75 1.5 17.75L1.5 17ZM2.03955 11.8067L11.9706 1.52095L10.8915 0.479054L0.960449 10.7648L2.03955 11.8067ZM10.8915 1.52095L16.4087 7.23523L17.4878 6.19334L11.9706 0.479054L10.8915 1.52095ZM16.4087 6.19334L6.47769 16.4791L7.55679 17.5209L17.4878 7.23523L16.4087 6.19334ZM7.01724 16.25H1.5V17.75H7.01724V16.25ZM2.25 17V11.2857H0.75V17H2.25ZM7.58114 4.94952L13.0984 10.6638L14.1775 9.62191L8.66024 3.90763L7.58114 4.94952ZM9.77586 17.75H17.5V16.25H9.77586V17.75Z"
+											fill="currentColor" />
+									</svg>
+								</a>
+								<button class="table__delete" data-remodal-target="confirm-modal">
+									<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.2773 15.5894H11.1211C11.332 15.5894 11.543 15.4136 11.543 15.1675V7.57373C11.543 7.36279 11.332 7.15186 11.1211 7.15186H10.2773C10.0312 7.15186 9.85547 7.36279 9.85547 7.57373V15.1675C9.85547 15.4136 10.0312 15.5894 10.2773 15.5894ZM16.043 3.77686H13.125L11.9297 1.80811C11.6484 1.31592 11.0859 0.964355 10.4883 0.964355H6.9375C6.33984 0.964355 5.77734 1.31592 5.49609 1.80811L4.30078 3.77686H1.41797C1.10156 3.77686 0.855469 4.05811 0.855469 4.33936V4.90186C0.855469 5.21826 1.10156 5.46436 1.41797 5.46436H1.98047V17.2769C1.98047 18.2261 2.71875 18.9644 3.66797 18.9644H13.793C14.707 18.9644 15.4805 18.2261 15.4805 17.2769V5.46436H16.043C16.3242 5.46436 16.6055 5.21826 16.6055 4.90186V4.33936C16.6055 4.05811 16.3242 3.77686 16.043 3.77686ZM6.86719 2.75732C6.90234 2.72217 6.97266 2.65186 7.04297 2.65186C7.04297 2.65186 7.04297 2.65186 7.07812 2.65186H10.3828C10.4531 2.65186 10.5234 2.72217 10.5586 2.75732L11.1562 3.77686H6.26953L6.86719 2.75732ZM13.793 17.2769H3.66797V5.46436H13.793V17.2769ZM6.33984 15.5894H7.18359C7.39453 15.5894 7.60547 15.4136 7.60547 15.1675V7.57373C7.60547 7.36279 7.39453 7.15186 7.18359 7.15186H6.33984C6.09375 7.15186 5.91797 7.36279 5.91797 7.57373V15.1675C5.91797 15.4136 6.09375 15.5894 6.33984 15.5894Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="blog-posts-table__row">
+							<label class="table__label checkbox">
+								<input class="checkbox__input" type="checkbox" name="group" />
+								<span></span>
+							</label>
+							<div class="blog-posts-table__cell"><img src="./img/weddings-table-photo.png" alt="" /></div>
+							<div class="blog-posts-table__cell blog-posts-table__heading">
+								The Parts of the Wedding That Are (and Aren't!) Worth a Splurge
+							</div>
+							<div class="blog-posts-table__cell">Videographers, Rentals, Design, Travel and honeymoon</div>
+							<div class="blog-posts-table__cell">20 Feb 2019</div>
+							<div class="blog-posts-table__cell blog-posts-table__cell--buttons">
+								<button class="table__check">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.8418 1.07031L6.05469 11.8574L2.11719 7.87891C1.91211 7.71484 1.58398 7.71484 1.41992 7.87891L0.230469 9.06836C0.0664062 9.23242 0.0664062 9.56055 0.230469 9.76562L5.72656 15.2207C5.93164 15.4258 6.21875 15.4258 6.42383 15.2207L18.7285 2.91602C18.8926 2.75195 18.8926 2.42383 18.7285 2.21875L17.5391 1.07031C17.375 0.865234 17.0469 0.865234 16.8418 1.07031Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="table__visible">
+									<svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1 7.5L0.297436 7.2375C0.234188 7.40679 0.234188 7.59321 0.297436 7.76249L1 7.5ZM18 7.5L18.7026 7.7625C18.7658 7.59321 18.7658 7.40679 18.7026 7.2375L18 7.5ZM9.49998 13.25C6.76379 13.25 4.83019 11.7934 3.5473 10.2674C2.90682 9.50551 2.44184 8.74032 2.1372 8.16477C1.98533 7.87783 1.87451 7.64032 1.80261 7.47705C1.76669 7.39547 1.74057 7.33261 1.72397 7.2916C1.71567 7.27111 1.70976 7.25608 1.7062 7.24693C1.70442 7.24236 1.70323 7.23925 1.70263 7.23766C1.70233 7.23687 1.70217 7.23645 1.70216 7.23643C1.70215 7.23641 1.70219 7.23649 1.70225 7.23667C1.70229 7.23676 1.70236 7.23697 1.70238 7.23702C1.70247 7.23725 1.70256 7.2375 1 7.5C0.297436 7.76249 0.29755 7.7628 0.297674 7.76313C0.297728 7.76328 0.297862 7.76363 0.297969 7.76392C0.298185 7.76449 0.298439 7.76517 0.298731 7.76594C0.299314 7.76749 0.300049 7.76943 0.300937 7.77176C0.302713 7.77642 0.305099 7.78264 0.308101 7.79036C0.314105 7.8058 0.322573 7.82728 0.333545 7.85439C0.355485 7.9086 0.387468 7.98539 0.429811 8.08155C0.51444 8.27374 0.640786 8.54404 0.811456 8.86648C1.1519 9.50968 1.67352 10.3695 2.39911 11.2326C3.84836 12.9566 6.16474 14.75 9.49998 14.75V13.25ZM1 7.5C1.70256 7.76249 1.70247 7.76275 1.70238 7.76298C1.70236 7.76303 1.70229 7.76324 1.70225 7.76333C1.70219 7.76351 1.70215 7.76359 1.70216 7.76357C1.70217 7.76355 1.70233 7.76313 1.70263 7.76234C1.70323 7.76075 1.70442 7.75764 1.7062 7.75307C1.70976 7.74391 1.71567 7.72889 1.72397 7.70839C1.74057 7.66738 1.76669 7.60453 1.80261 7.52295C1.87451 7.35968 1.98533 7.12216 2.1372 6.83523C2.44184 6.25968 2.90682 5.49449 3.5473 4.73261C4.83019 3.20656 6.76379 1.75 9.49998 1.75V0.25C6.16474 0.25 3.84836 2.04344 2.39911 3.76738C1.67352 4.63051 1.1519 5.49032 0.811456 6.13352C0.640786 6.45596 0.51444 6.72626 0.429811 6.91845C0.387468 7.01461 0.355485 7.0914 0.333545 7.14561C0.322573 7.17272 0.314105 7.1942 0.308101 7.20964C0.305099 7.21736 0.302713 7.22358 0.300937 7.22824C0.300049 7.23057 0.299314 7.23251 0.298731 7.23406C0.298439 7.23483 0.298185 7.23551 0.297969 7.23608C0.297862 7.23637 0.297728 7.23672 0.297674 7.23687C0.29755 7.2372 0.297436 7.2375 1 7.5ZM9.49998 1.75C12.2362 1.75 14.1698 3.20656 15.4527 4.73262C16.0932 5.49449 16.5582 6.25968 16.8628 6.83524C17.0147 7.12217 17.1255 7.35968 17.1974 7.52296C17.2333 7.60453 17.2594 7.66739 17.276 7.7084C17.2843 7.7289 17.2902 7.74392 17.2938 7.75307C17.2956 7.75765 17.2968 7.76075 17.2974 7.76234C17.2977 7.76313 17.2978 7.76355 17.2978 7.76358C17.2978 7.76359 17.2978 7.76351 17.2977 7.76333C17.2977 7.76324 17.2976 7.76303 17.2976 7.76299C17.2975 7.76275 17.2974 7.7625 18 7.5C18.7026 7.2375 18.7024 7.2372 18.7023 7.23686C18.7023 7.23672 18.7021 7.23636 18.702 7.23608C18.7018 7.2355 18.7016 7.23483 18.7013 7.23405C18.7007 7.23251 18.6999 7.23057 18.6991 7.22824C18.6973 7.22358 18.6949 7.21736 18.6919 7.20964C18.6859 7.19419 18.6774 7.17271 18.6665 7.14561C18.6445 7.0914 18.6125 7.01461 18.5702 6.91845C18.4856 6.72626 18.3592 6.45596 18.1885 6.13351C17.8481 5.49032 17.3265 4.63051 16.6009 3.76738C15.1516 2.04344 12.8352 0.25 9.49998 0.25V1.75ZM18 7.5C17.2974 7.2375 17.2975 7.23725 17.2976 7.23701C17.2976 7.23697 17.2977 7.23676 17.2977 7.23667C17.2978 7.23649 17.2978 7.23641 17.2978 7.23642C17.2978 7.23645 17.2977 7.23687 17.2974 7.23766C17.2968 7.23925 17.2956 7.24235 17.2938 7.24693C17.2902 7.25608 17.2843 7.2711 17.276 7.2916C17.2594 7.33261 17.2333 7.39547 17.1974 7.47704C17.1255 7.64032 17.0147 7.87783 16.8628 8.16476C16.5582 8.74032 16.0932 9.50551 15.4527 10.2674C14.1698 11.7934 12.2362 13.25 9.49998 13.25V14.75C12.8352 14.75 15.1516 12.9566 16.6009 11.2326C17.3265 10.3695 17.8481 9.50968 18.1885 8.86649C18.3592 8.54404 18.4856 8.27374 18.5702 8.08155C18.6125 7.98539 18.6445 7.9086 18.6665 7.85439C18.6774 7.82729 18.6859 7.80581 18.6919 7.79036C18.6949 7.78264 18.6973 7.77642 18.6991 7.77176C18.6999 7.76943 18.7007 7.76749 18.7013 7.76594C18.7016 7.76517 18.7018 7.7645 18.702 7.76392C18.7021 7.76364 18.7023 7.76328 18.7023 7.76314C18.7024 7.7628 18.7026 7.7625 18 7.5ZM9.5 9.35C8.62031 9.35 7.82143 8.57073 7.82143 7.5H6.32143C6.32143 9.30115 7.69716 10.85 9.5 10.85V9.35ZM11.1786 7.5C11.1786 8.57073 10.3797 9.35 9.5 9.35V10.85C11.3028 10.85 12.6786 9.30115 12.6786 7.5H11.1786ZM9.5 5.65C10.3797 5.65 11.1786 6.42927 11.1786 7.5H12.6786C12.6786 5.69885 11.3028 4.15 9.5 4.15V5.65ZM9.5 4.15C7.69716 4.15 6.32143 5.69885 6.32143 7.5H7.82143C7.82143 6.42927 8.62031 5.65 9.5 5.65V4.15Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+								<button class="table__favorite">
+									<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9 13.4375L4.05548 16L5 10.5725L1 6.72914L6.52774 5.93788L9 1L11.4723 5.93788L17 6.72914L13 10.5725L13.9445 16L9 13.4375Z"
+											stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<a href="blog-post-edit.html" class="table__edit">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.5 11.2857L0.960449 10.7648L0.75 10.9827V11.2857H1.5ZM11.431 1L11.9706 0.479054C11.8293 0.332674 11.6345 0.25 11.431 0.25C11.2276 0.25 11.0328 0.332674 10.8915 0.479054L11.431 1ZM16.9483 6.71429L17.4878 7.23523C17.7684 6.94461 17.7684 6.48396 17.4878 6.19334L16.9483 6.71429ZM7.01724 17V17.75H7.33564L7.55679 17.5209L7.01724 17ZM1.5 17H0.75C0.75 17.4142 1.08579 17.75 1.5 17.75L1.5 17ZM2.03955 11.8067L11.9706 1.52095L10.8915 0.479054L0.960449 10.7648L2.03955 11.8067ZM10.8915 1.52095L16.4087 7.23523L17.4878 6.19334L11.9706 0.479054L10.8915 1.52095ZM16.4087 6.19334L6.47769 16.4791L7.55679 17.5209L17.4878 7.23523L16.4087 6.19334ZM7.01724 16.25H1.5V17.75H7.01724V16.25ZM2.25 17V11.2857H0.75V17H2.25ZM7.58114 4.94952L13.0984 10.6638L14.1775 9.62191L8.66024 3.90763L7.58114 4.94952ZM9.77586 17.75H17.5V16.25H9.77586V17.75Z"
+											fill="currentColor" />
+									</svg>
+								</a>
+								<button class="table__delete" data-remodal-target="confirm-modal">
+									<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.2773 15.5894H11.1211C11.332 15.5894 11.543 15.4136 11.543 15.1675V7.57373C11.543 7.36279 11.332 7.15186 11.1211 7.15186H10.2773C10.0312 7.15186 9.85547 7.36279 9.85547 7.57373V15.1675C9.85547 15.4136 10.0312 15.5894 10.2773 15.5894ZM16.043 3.77686H13.125L11.9297 1.80811C11.6484 1.31592 11.0859 0.964355 10.4883 0.964355H6.9375C6.33984 0.964355 5.77734 1.31592 5.49609 1.80811L4.30078 3.77686H1.41797C1.10156 3.77686 0.855469 4.05811 0.855469 4.33936V4.90186C0.855469 5.21826 1.10156 5.46436 1.41797 5.46436H1.98047V17.2769C1.98047 18.2261 2.71875 18.9644 3.66797 18.9644H13.793C14.707 18.9644 15.4805 18.2261 15.4805 17.2769V5.46436H16.043C16.3242 5.46436 16.6055 5.21826 16.6055 4.90186V4.33936C16.6055 4.05811 16.3242 3.77686 16.043 3.77686ZM6.86719 2.75732C6.90234 2.72217 6.97266 2.65186 7.04297 2.65186C7.04297 2.65186 7.04297 2.65186 7.07812 2.65186H10.3828C10.4531 2.65186 10.5234 2.72217 10.5586 2.75732L11.1562 3.77686H6.26953L6.86719 2.75732ZM13.793 17.2769H3.66797V5.46436H13.793V17.2769ZM6.33984 15.5894H7.18359C7.39453 15.5894 7.60547 15.4136 7.60547 15.1675V7.57373C7.60547 7.36279 7.39453 7.15186 7.18359 7.15186H6.33984C6.09375 7.15186 5.91797 7.36279 5.91797 7.57373V15.1675C5.91797 15.4136 6.09375 15.5894 6.33984 15.5894Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<button class="table__add">
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.375 7.6875C12.375 7.47656 12.1641 7.26562 11.9531 7.26562H8.85938V4.17188C8.85938 3.96094 8.64844 3.75 8.4375 3.75H7.3125C7.06641 3.75 6.89062 3.96094 6.89062 4.17188V7.26562H3.79688C3.55078 7.26562 3.375 7.47656 3.375 7.6875V8.8125C3.375 9.05859 3.55078 9.23438 3.79688 9.23438H6.89062V12.3281C6.89062 12.5742 7.06641 12.75 7.3125 12.75H8.4375C8.64844 12.75 8.85938 12.5742 8.85938 12.3281V9.23438H11.9531C12.1641 9.23438 12.375 9.05859 12.375 8.8125V7.6875ZM15.75 2.0625C15.75 1.14844 14.9766 0.375 14.0625 0.375H1.6875C0.738281 0.375 0 1.14844 0 2.0625V14.4375C0 15.3867 0.738281 16.125 1.6875 16.125H14.0625C14.9766 16.125 15.75 15.3867 15.75 14.4375V2.0625ZM14.0625 14.2266C14.0625 14.3672 13.957 14.4375 13.8516 14.4375H1.89844C1.75781 14.4375 1.6875 14.3672 1.6875 14.2266V2.27344C1.6875 2.16797 1.75781 2.0625 1.89844 2.0625H13.8516C13.957 2.0625 14.0625 2.16797 14.0625 2.27344V14.2266Z"
+								fill="currentColor" />
+						</svg>
+						Add
+					</button>
+					<div class="pagination">
+						<button class="pagination__btn">
+							<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.646447 4.35355C0.451185 4.15829 0.451184 3.84171 0.646447 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646447 4.35355ZM2 4.5L1 4.5L1 3.5L2 3.5L2 4.5Z"
+									fill="currentColor" />
+							</svg>
+							Back
+						</button>
+						<div class="pagination__numbers">
+							<a href="#" class="pagination__number pagination__number--active">1</a>
+							<a href="#" class="pagination__number">2</a>
+							<a href="#" class="pagination__number">3</a>
+							<a href="#" class="pagination__number">4</a>
+						</div>
+						<button class="pagination__btn pagination__btn--next">
+							Next
+							<svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.646447 4.35355C0.451185 4.15829 0.451184 3.84171 0.646447 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.97631 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646447 4.35355ZM2 4.5L1 4.5L1 3.5L2 3.5L2 4.5Z"
+									fill="currentColor" />
+							</svg>
+						</button>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="remodal" data-remodal-id="confirm-modal">
+		<p class="remodal__question">
+			Are you sure that you want to archive this submittion?
+		</p>
+		<div class="remodal__buttons">
+			<button data-remodal-action="confirm" class="remodal-confirm btn-border">
+				yes
+			</button>
+			<button data-remodal-action="cancel" class="remodal-cancel btn">
+				no
+			</button>
+		</div>
+	</div>
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+		integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
+		crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

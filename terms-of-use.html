@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin panel | Jewish Brides</title>
+    <script src="https://use.typekit.net/duu4dza.js" type="text/javascript"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link href="./img/favicon.svg" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="body--flex">
+<div class="wrapper">
+    <div class="sidebar-sticky">
+	<nav class="sidebar">
+		<img class="sidebar__logo sidebar__logo--text" src="./img/logo-text.svg" alt="Jewish Brides" />
+		<img class="sidebar__logo--min" src="./img/JB.svg" alt="Jewish Brides" />
+		<img class="sidebar__logo" src="./img/logo.svg" alt="" />
+
+		<ul class="sidebar__list">
+			<li>
+				<a href="#" class="sidebar__link">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M9 1L1 7.85714V15.8571C1 16.4883 1.51167 17 2.14286 17H6.71429V13.5714C6.71429 12.3091 7.73764 11.2857 9 11.2857C10.2624 11.2857 11.2857 12.3091 11.2857 13.5714V17H15.8571C16.4883 17 17 16.4883 17 15.8571V7.85714L9 1Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Homee</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 1V17M1 9H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Submissions</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="weddings.html">Weddings</a>
+					<a class="sidebar__submenu--link" href="vendors-submission.html">Vendors</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown sidebar__dropdown--open">
+					<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.28571 3.28571H2.14286C1.51167 3.28571 1 3.79739 1 4.42857V15.8571C1 16.4883 1.51167 17 2.14286 17H11.2857C11.9169 17 12.4286 16.4883 12.4286 15.8571V14.7143M13.5714 14.7143H4.42857C3.79739 14.7143 3.28571 14.2026 3.28571 13.5714V2.14286C3.28571 1.51167 3.79739 1 4.42857 1H11.2857L14.7143 3.28571V13.5714C14.7143 14.2026 14.2026 14.7143 13.5714 14.7143Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Pages</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="/">Homepage</a>
+					<a class="sidebar__submenu--link" href="about-us.html">About Us</a>
+					<a class="sidebar__submenu--link" href="contact.html">Contact</a>
+					<a class="sidebar__submenu--link" href="wedding-submission.html">Wedding Submission</a>
+					<a class="sidebar__submenu--link" href="how-it-works.html">How It Works</a>
+					<a class="sidebar__submenu--link" href="work-with-us.html">Work With Us</a>
+					<a class="sidebar__submenu--link" href="vendors.html">Vendors</a>
+					<a class="sidebar__submenu--link" href="#">Vendor Profile</a>
+					<a class="sidebar__submenu--link" href="terms-of-use.html">Terms of use</a>
+					<a class="sidebar__submenu--link" href="privacy.html">Privacy</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.1429 17H17V15.2857C17 13.7078 15.7208 12.4286 14.1429 12.4286M10.1429 4.42634C10.1429 6.31882 8.608 7.85267 6.71429 7.85267C4.82057 7.85267 3.28571 6.31882 3.28571 4.42634C3.28571 2.53386 4.82057 1 6.71429 1C8.608 1 10.1429 2.53386 10.1429 4.42634ZM12.4286 16.9896H1C1 16.1781 1 15.4061 1 14.707C1 12.8135 2.53502 11.279 4.42857 11.279H9C10.8935 11.279 12.4286 12.8135 12.4286 14.707C12.4286 15.4061 12.4286 16.1781 12.4286 16.9896ZM13.5714 10.1429C12.3091 10.1429 11.2857 9.11951 11.2857 7.85714C11.2857 6.59478 12.3091 5.57143 13.5714 5.57143C14.8338 5.57143 15.8571 6.59478 15.8571 7.85714C15.8571 9.11951 14.8338 10.1429 13.5714 10.1429Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="vendors-page.html" class="sidebar__link">
+					<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M7.71429 3.85714V3.28571C7.71429 2.02335 8.73764 1 10 1C11.2624 1 12.2857 2.02335 12.2857 3.28571V3.85714M2 7.85714C6.23517 12.6973 13.7648 12.6973 18 7.85714M3.14286 4.42857H16.8571C17.4883 4.42857 18 4.94025 18 5.57143V15.8571C18 16.4883 17.4883 17 16.8571 17H3.14286C2.51168 17 2 16.4883 2 15.8571V5.57143C2 4.94025 2.51167 4.42857 3.14286 4.42857Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Vendors
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="weddings-page.html" class="sidebar__link">
+					<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 17L1 6.71429M9 17L17 6.71429M9 17L6 6.71429M9 17L12 6.71429M1 6.71429L4.42857 1H13.5714L17 6.71429M1 6.71429H6M17 6.71429H12M6 6.71429H9H12"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Weddings
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="blog-posts.html" class="sidebar__link">
+					<svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M4.25 8.24477H3.5V9.74477H4.25V8.24477ZM10.75 9.74477H11.5V8.24477H10.75V9.74477ZM4.25086 11.6711L3.50086 11.6702L3.49914 13.1702L4.24914 13.1711L4.25086 11.6711ZM10.7491 13.1786L11.4991 13.1794L11.5009 11.6794L10.7509 11.6786L10.7491 13.1786ZM4.25052 4.81843L3.50052 4.81791L3.49948 6.31791L4.24948 6.31843L4.25052 4.81843ZM8.58281 6.32143L9.33281 6.32195L9.33385 4.82195L8.58385 4.82143L8.58281 6.32143ZM10.75 1L11.2943 0.484034L11.0725 0.25H10.75V1ZM14 4.42857H14.75V4.12959L14.5443 3.91261L14 4.42857ZM4.25 9.74477H10.75V8.24477H4.25V9.74477ZM4.24914 13.1711L10.7491 13.1786L10.7509 11.6786L4.25086 11.6711L4.24914 13.1711ZM4.24948 6.31843L8.58281 6.32143L8.58385 4.82143L4.25052 4.81843L4.24948 6.31843ZM12.9167 16.25H2.08333V17.75H12.9167V16.25ZM1.75 15.8571V2.14286H0.25V15.8571H1.75ZM2.08333 1.75H10.75V0.25H2.08333V1.75ZM13.25 4.42857V15.8571H14.75V4.42857H13.25ZM10.2057 1.51597L13.4557 4.94454L14.5443 3.91261L11.2943 0.484034L10.2057 1.51597ZM2.08333 16.25C1.93653 16.25 1.75 16.1124 1.75 15.8571H0.25C0.25 16.8642 1.03352 17.75 2.08333 17.75V16.25ZM12.9167 17.75C13.9665 17.75 14.75 16.8642 14.75 15.8571H13.25C13.25 16.1124 13.0635 16.25 12.9167 16.25V17.75ZM1.75 2.14286C1.75 1.88758 1.93653 1.75 2.08333 1.75V0.25C1.03352 0.25 0.25 1.13577 0.25 2.14286H1.75Z"
+							fill="currentColor" />
+					</svg>
+					<span>
+						Blog posts
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link sidebar__dropdown sidebar__dropdown--open">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M7.22171 1L7.12343 1.49942L6.74744 3.32685C6.14629 3.55656 5.60114 3.8823 5.10857 4.26859L3.27086 3.65372L2.77715 3.50058L2.52115 3.94171L1.256 6.05825L1 6.49946L1.37486 6.82745L2.79658 8.0377C2.74515 8.35428 2.67887 8.66739 2.67887 8.99996C2.67887 9.33254 2.74515 9.64572 2.79658 9.96229L1.37486 11.1726L1 11.5005L1.256 11.9417L2.52115 14.0583L2.77715 14.5005L3.27086 14.3463L5.10857 13.7314C5.60114 14.1177 6.14629 14.4434 6.74744 14.6731L7.12343 16.5005L7.22171 17H10.7772L10.8766 16.5005L11.2514 14.6731C11.8526 14.4434 12.3977 14.1177 12.8903 13.7314L14.728 14.3463L15.2217 14.5005L15.4789 14.0583L16.7429 11.9417L17 11.5005L16.624 11.1726L15.2023 9.96229C15.2549 9.64572 15.32 9.33254 15.32 8.99996C15.32 8.66739 15.2549 8.35428 15.2023 8.0377L16.624 6.82745L17 6.49946L16.7429 6.05825L15.4789 3.94171L15.2217 3.50058L14.728 3.65372L12.8903 4.26859C12.3977 3.8823 11.8526 3.55656 11.2514 3.32685L10.8766 1.49942L10.7772 1H7.22171Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M11.2853 8.99996C11.2853 10.2617 10.2613 11.2857 8.99958 11.2857C7.73787 11.2857 6.71387 10.2617 6.71387 8.99996C6.71387 7.73825 7.73787 6.7143 8.99958 6.7143C10.2613 6.7143 11.2853 7.73825 11.2853 8.99996Z"
+							stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+					</svg>
+					<span>
+						Settings
+					</span>
+					<svg class="sidebar__dropdown--icon" width="8" height="5" viewBox="0 0 8 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M3.64645 4.35355C3.84171 4.54882 4.15829 4.54882 4.35355 4.35355L7.53553 1.17157C7.7308 0.976311 7.7308 0.659728 7.53553 0.464466C7.34027 0.269204 7.02369 0.269204 6.82843 0.464466L4 3.29289L1.17157 0.464466C0.976311 0.269203 0.659728 0.269203 0.464466 0.464465C0.269204 0.659728 0.269204 0.97631 0.464466 1.17157L3.64645 4.35355ZM3.5 3L3.5 4L4.5 4L4.5 3L3.5 3Z"
+							fill="white" />
+					</svg>
+				</a>
+				<div class="sidebar__submenu">
+					<a class="sidebar__submenu--link" href="color-settings.html">Colors</a>
+					<a class="sidebar__submenu--link" href="tag-settings.html">Blog tag</a>
+					<a class="sidebar__submenu--link" href="location.html">Locations</a>
+					<a class="sidebar__submenu--link" href="highlights.html">Highlights</a>
+					<a class="sidebar__submenu--link" href="vendor-types.html">Vendor types</a>
+					<a class="sidebar__submenu--link" href="menu-settings.html">Menu</a>
+					<a class="sidebar__submenu--link" href="security.html">Security</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="sidebar__link logout">
+					<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.33456 9H17.0012M17.0012 9L15.0012 7M17.0012 9L15.0012 11" stroke="currentColor"
+							stroke-width="1.5" stroke-linecap="square" />
+						<path d="M11.6667 4.55556V1H1V17H11.6667V13.4444" stroke="currentColor" stroke-width="1.5"
+							stroke-linecap="square" />
+					</svg>
+					<span>
+						Logout
+					</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+    <div class="inner inner--for-sticky">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="header__link">go to live website</a>
+                <p class="header__current">admin panel</p>
+            </div>
+            <section class="live-editor section">
+                <div class="sticky-btn-wrp">
+                    <button class="dd-open-btn">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#C5C5C5" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <h2 class="italic-title dd-title ">LIVE page editor</h2>
+                        <div class="dd-wrp">
+                            <div class="dd" dd-num="1">
+                                <p class="text">
+                                    Click on the button “Edit” if you want to change text and photo
+                                    content on the page.
+                                </p>
+                                <button type="submit" class="btn">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+            <section class="seo-editor section">
+        
+                <div class="sticky-btn-wrp">
+                    <button class="dd-open-btn">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#C5C5C5" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <div>
+                        <h2 class="italic-title dd-title">SEO Meta Data</h2>
+                        <div class="dd-wrp">
+                            <div class="dd" dd-num="3">
+                                <div class="flex">
+                                    <div class="media">
+                                        <p class="media__label">
+                                            Social media thumbnail <span>(1200*620px)</span>
+                                        </p>
+                                        <div class="media__wrap">
+                                            <div class="media__preview process">
+                                                <div class="timer">
+                                                    <div class="timer__circle--right">
+											<span class="timer__span timer__span--right">
+											</span>
+                                                    </div>
+                                                    <div class="timer__circle--left">
+											<span class="timer__span timer__span--left">
+											</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="media__btn btn">upload</button>
+                                            <button class="media__btn btn-grey">Delete</button>
+                                        </div>
+                                    </div>
+                                    <div class="media__input input">
+                                        <label class="input__label" for="meta">Meta Title <span>(up to 60 symbols)</span></label>
+                                        <input class="input__field" id="meta" value="Home | Jewish Brides"/>
+                                    </div>
+                                </div>
+                                <div class="textarea">
+                                    <label class="textarea__label label" for="textarea-meta">Meta Description <span>(up to 200
+								symbols)</span></label>
+                                    <textarea class="textarea__field" name="" id="textarea-meta"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
