@@ -199,7 +199,18 @@ img {
 
 .italic-title.dd-title::before {
   width: 1.875rem;
+  /* 30/16 */
   left: -3.75rem;
+  /* -60/16 */
+}
+
+.italic-title.dd-title:after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 5rem);
+  height: 100%;
+  left: -5rem;
+  /* -60/16 */
 }
 
 .text {
@@ -565,6 +576,7 @@ input[type=range]::-webkit-slider-thumb {
   position: -webkit-sticky;
   position: sticky;
   top: 0.75rem;
+  /* 12/16 */
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -577,13 +589,16 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.1rem solid #C5C5C5;
+  border: 0.1rem solid #CB9274;
   margin-top: 0.75rem;
   -webkit-transition: -webkit-transform 400ms;
   transition: -webkit-transform 400ms;
   -o-transition: transform 400ms;
   transition: transform 400ms;
   transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .dd-open-btn svg {
@@ -591,23 +606,26 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0.1rem;
 }
 
+.dd-open-btn svg path {
+  stroke: #CB9274;
+}
+
 .dd-open-btn.active {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  border-color: #CB9274;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-color: #C5C5C5;
 }
 
 .dd-open-btn.active svg path {
-  stroke: #CB9274;
+  stroke: #C5C5C5;
 }
 
 .dd-wrp {
   overflow: hidden;
-  height: 0px;
-  -webkit-transition: height 400ms;
-  -o-transition: height 400ms;
-  transition: height 400ms;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .dd {

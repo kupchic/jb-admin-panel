@@ -160,7 +160,7 @@ const tabs = (
           if (target == item || target.parentNode == item) {
             hideTabContent();
             showTabContent(i);
-            counter.textContent = i + 1;
+            counter.textContent = `${i + 1}`;
           }
           console.log(i);
         });
@@ -519,31 +519,45 @@ $(document).click(function () {
   }
 });
 
-function dropdownCardOpen(dropdownBtn, dropdownContent, openClass) {
-  let activeBtn;
+function dropdownCardOpen(dropdownBtn, dropdownTitles,  dropdownContent, openClass) {
   const dropdownBtnList = document.querySelectorAll(dropdownBtn);
   const dropdownContentsList = document.querySelectorAll(`[dd-num]`);
+  const dropdownTitlesList = document.querySelectorAll(dropdownTitles);
   if (dropdownBtnList[0]) {
     dropdownBtnList.forEach((elem, num) => {
+      let dropdownContentNode = dropdownContentsList[num];
+      dropdownContentNode.parentNode.style.height = `${dropdownContentNode.clientHeight}px`;
       elem.addEventListener("click", () => {
-        let dropdownContentNode = dropdownContentsList[num];
         if (!elem.classList.contains(openClass)) {
-          if (activeBtn && activeBtn.classList.contains(openClass)) {
-            activeBtn.click();
-          }
           elem.classList.add(openClass);
-          dropdownContentNode.parentNode.style.height = `${dropdownContentNode.clientHeight}px`;
-          activeBtn = elem;
+          dropdownTitlesList[num].classList.add(openClass);
+          dropdownContentNode.parentNode.style.height = `0px`;
         } else {
           elem.classList.remove(openClass);
+          dropdownTitlesList[num].classList.remove(openClass);
+          dropdownContentNode.parentNode.style.height = `${dropdownContentNode.clientHeight}px`;
+        }
+      });
+    });
+    dropdownTitlesList.forEach((elem, num) => {
+      let dropdownContentNode = dropdownContentsList[num];
+      elem.addEventListener("click", () => {
+        if (!elem.classList.contains(openClass)) {
+          elem.classList.add(openClass);
+          dropdownBtnList[num].classList.add(openClass);
           dropdownContentNode.parentNode.style.height = `0px`;
+        } else {
+          elem.classList.remove(openClass);
+          dropdownBtnList[num].classList.remove(openClass);
+          dropdownContentNode.parentNode.style.height = `${dropdownContentNode.clientHeight}px`;
         }
       });
     });
   }
 }
 
-dropdownCardOpen(".dd-open-btn", ".dd", "active");
+dropdownCardOpen(".dd-open-btn", '.dd-title',".dd", "active");
+
 
 const colorPickerBtns = document.querySelectorAll(".color__add-circle");
 function pickerOpen(e) {
